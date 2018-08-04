@@ -38,13 +38,17 @@ ores = {
             "priorityFlag" : 2,
             "overrides" :
                 {
+			"water" :
+				{
+					"testmob" : lambda x: x + 3,
+				},
                 },
             "additions" :
                {
                },
             "effects" :
                {
-                   "testmob": lambda x: x + 2
+                   "testmob": lambda x: x + 2,
                }
         },
         
@@ -60,8 +64,9 @@ ores = {
                 },
             "effects" :
                 {
+			"testmob" : lambda x: x + 2
                 }
-        }
+        },
         
     "dona" :
         {
@@ -76,7 +81,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "gash" :
         {
@@ -91,7 +96,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "nee" :
         {
@@ -106,7 +111,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "shal" :
         {
@@ -121,7 +126,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "vus" :
         {
@@ -136,7 +141,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "yos" :
         {
@@ -151,7 +156,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "besh" :
         {
@@ -166,7 +171,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "klam" :
         {
@@ -181,7 +186,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "mee" :
         {
@@ -196,7 +201,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "queem" :
         {
@@ -211,7 +216,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "sal" :
         {
@@ -226,7 +231,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "wem" :
         {
@@ -241,7 +246,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "ama" :
         {
@@ -256,7 +261,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "zak" :
         {
@@ -271,7 +276,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "ael" :
         {
@@ -286,7 +291,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "jash" :
         {
@@ -301,7 +306,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "ip" :
         {
@@ -316,7 +321,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "um" :
         {
@@ -331,9 +336,9 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
-    "hamee"" :
+    "hamee" :
         {
             "priority" : 22,
             "priorityFlag" : 22,
@@ -346,7 +351,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "om" :
         {
@@ -361,7 +366,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "chal" :
         {
@@ -376,7 +381,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "ipe" :
         {
@@ -391,7 +396,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "eef" :
         {
@@ -406,7 +411,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "oom" :
         {
@@ -421,7 +426,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "pas" :
         {
@@ -436,7 +441,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "rus" :
         {
@@ -451,7 +456,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "los" :
         {
@@ -466,7 +471,7 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
         
     "ome" :
         {
@@ -481,6 +486,6 @@ ores = {
             "effects" :
                 {
                 }
-        }
+        },
 
 }
