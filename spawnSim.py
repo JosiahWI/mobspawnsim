@@ -46,6 +46,8 @@ for oreName in locDef:
         for override in overrides[oreGroup]:
             targetOre = ores[oreGroup]
             targetPriorityFlag = targetOre["priorityFlag"]
+            if targetPriorityFlag == priority:
+                raise StandardError("Uncompatable priority in ore %s in group %s for override %s" % (oreName, oreGroup, override))
             if targetPriorityFlag < priority:
                 continue
             else:
