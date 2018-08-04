@@ -7,3 +7,6 @@ Overrides are only for the most powerful ores, these rewrite an effect of anothe
 Additions are for moderate and high powered ores, they extend the effect of another ore by adding an extra calculation to an existing effect.
 3: effects.
 Effects are the most basic power. An effect takes a base chance that a mob will spawn, and applies an equation to it to make a new chance.
+
+When writting effects, please put a comment with each ore to explain its general behavior, or if it doesn't have any general behavior say so.
+Please also put a comment by each individual override/addition/effect to explain its behavior.
