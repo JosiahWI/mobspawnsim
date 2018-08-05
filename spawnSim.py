@@ -1,36 +1,5 @@
-#ores = {
-#"iron": {
-#
-#"priority": 4,
-#
-#"overrides": {
-#
-#"coal": {
-#
-#"mob1": lambda x: x + 3,
-#"mob2": lambda x: x + 4,
-#
-#},
-#
-#"dirt": {
-#
-#"mob1": lambda x: x + 5,
-#"mob2": lambda x: x + 6,
-#
-#},
-#
-#},
-#
-#"effects": {
-#"mob1": lambda x: x + 1,
-#"mob2": lambda x: x + 2}
-#},
-#
-#}
-
 import spawnData
 import locDef
-import sys
 
 locDef = locDef.locDef
 
@@ -40,14 +9,18 @@ for oreName in locDef:
     if locDef[oreName] == 0:
         continue
     oreData = ores[oreName]
-    priority = oreData["priority"]
     overrides = oreData["overrides"]
     for oreGroup in overrides:
         for override in overrides[oreGroup]:
+            priority = oreData["priority"]
             targetOre = ores[oreGroup]
             targetPriorityFlag = targetOre["priorityFlag"]
+            if type(overrides[oreGroup][override]) == tuple:
+	        print "special"
+                priority = override[0]
+                override = override[1]
             if targetPriorityFlag == priority:
-                raise StandardError("Uncompatable priority in ore %s in group %s for override %s" % (oreName, oreGroup, override))
+                raise StandardError("Ore %s is attempting to override effect %s in ore %s, but there is a priority clash. Source priority: %d. Target priority flag: %d" % (oreName, override, oreGroup, priority, targetPriorityFlag))
             if targetPriorityFlag < priority:
                 continue
             else:

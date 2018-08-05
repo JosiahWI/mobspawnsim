@@ -12,3 +12,7 @@ Two ores may have the same priority, but if two ores of equal priority contain a
 
 When writting effects, please put a comment with each ore to explain its general behavior, or if it doesn't have any general behavior say so.
 Please also put a comment by each individual override/addition/effect to explain its behavior.
+
+It is possible to specify a special priority specefic to a given effect as follows:
+Instead of normal function definition "lambda x: functionDef"
+Write "(specialPriority, lambda x: functionDef)"

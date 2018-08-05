@@ -14,9 +14,9 @@ ores = {
             "priorityFlag" : 1,
             "overrides" :
                 {
-                    "lava" :
+                    "water" :
                         {
-                            "testmob" : lambda x: x + 1,
+                            "testmob" : (2, lambda x: x + 1),
                         },
                 },
             "additions" :
@@ -34,8 +34,8 @@ ores = {
         
     "lava" :
         {
-            "priority" : 2,
-            "priorityFlag" : 2,
+            "priority" : 1,
+            "priorityFlag" : 1,
             "overrides" :
                 {
 			"water" :
